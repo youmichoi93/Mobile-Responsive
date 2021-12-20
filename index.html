@@ -1,54 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Blake's Navigation-PC-Layout</title>
+    <title>Blake's Navigation-clicked</title>
     <!-- Jqurery CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
 
     <div class="container">
-    <header>
-      <div class="header-inner">
-        <span class="logo">Blake's Portfolio</span>
-        <div class="gnb">
-          <a href="#">about</a>
-          <a href="#">about</a>
-          <a href="#">about</a>
-          <a href="#">about</a>
-          <a href="#">about</a>
+      <header>
+        <div class="header-inner">
+          <span class="logo">Blake's Portfolio</span>
+          <div class="gnb">
+            <a class="active" href="#feature1">about</a>
+            <a href="#feature2">about</a>
+            <a href="#feature3">about</a>
+            <a href="#feature4">about</a>
+            <a href="#feature5">about</a>
+          </div> 
         </div>
-      </div>
-    </header>
-    <section>
-      <div class="inner">
-        <h1>about</h1>
-      </div>
-    </section>
-    <section>
-      <div class="inner">
-        <h1>about</h1>
-      </div>
-    </section>
-    <section>
-      <div class="inner">
-        <h1>about</h1>
-      </div>
-    </section>
-    <section>
-      <div class="inner">
-        <h1>about</h1>
-      </div>
-    </section>
-    <section>
-      <div class="inner">
-        <h1>about</h1>
-      </div>
-    </section>
+      </header>
+      <section id="feature1">
+        <div class="inner">
+          <h1>about</h1>
+        </div>
+      </section>
+      <section id="feature2">
+        <div class="inner">
+          <h1>about</h1>
+        </div>
+      </section>
+      <section id="feature3">
+        <div class="inner">
+          <h1>about</h1>
+        </div>
+      </section>
+      <section id="feature4">
+        <div class="inner">
+          <h1>about</h1>
+        </div>
+      </sectio>
+      <section id="feature5">
+        <div class="inner">
+          <h1>about</h1>
+        </div>
+      </section>
     </div>
-  
+
+    <script>
+      $('.gnb a').click(function(){
+        $(this).addClass('active')
+        $(this).siblings().removeClass('active')
+      })
+    </script>
+
   </body>
 </html>

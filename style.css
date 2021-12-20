@@ -1,14 +1,18 @@
 /* Google Web Font */
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family:'Raleway', sans-serif;
-  background-color: fff;
+  font-family:  'Raleway', sans-serif;
+  background-color: #fff;
   font-size: 18px;
 }
 
@@ -48,7 +52,11 @@ header {
   text-transform: capitalize;
 }
 
-/* Section Layout */
+.gnb a.active {
+  color: crimson;
+}
+
+/* Section Layout  */
 section {
   height: 100vh;
   line-height: 100vh;
@@ -56,11 +64,11 @@ section {
 }
 
 section:nth-child(odd) {
-  background: #fff;
+  background-color: #fff;
 }
 
 section:nth-child(even) {
-  background: #eee;
+  background-color: #eee;
 }
 
 .inner {
@@ -74,6 +82,24 @@ section h1 {
   margin: 0;
   text-transform: uppercase;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

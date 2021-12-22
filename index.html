@@ -3,14 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Blake's Navigation-clicked</title>
+    <title>Blake's Navigation-Mobile</title>
     <!-- Jqurery CDN -->
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet">
+    <link href="responsive.css" rel="stylesheet">
   </head>
   <body>
 
     <div class="container">
+      <div class="overlay"></div>
       <header>
         <div class="header-inner">
           <span class="logo">Blake's Portfolio</span>
@@ -20,45 +22,55 @@
             <a href="#feature3">about</a>
             <a href="#feature4">about</a>
             <a href="#feature5">about</a>
-          </div> 
+          </div>
+        </div>
+        <div class="trigger">
+          <i class="xi-bars"></i>
         </div>
       </header>
       <section id="feature1">
         <div class="inner">
-          <h1>about</h1>
+          <h1>about</h1>        
         </div>
       </section>
-      <section id="feature2">
+       <section id="feature2">
         <div class="inner">
-          <h1>about</h1>
+          <h1>about</h1>        
         </div>
       </section>
-      <section id="feature3">
+       <section id="feature3">
         <div class="inner">
-          <h1>about</h1>
+          <h1>about</h1>        
         </div>
       </section>
-      <section id="feature4">
+       <section id="feature4">
         <div class="inner">
-          <h1>about</h1>
+          <h1>about</h1>        
         </div>
-      </sectio>
-      <section id="feature5">
+      </section>
+       <section id="feature5">
         <div class="inner">
-          <h1>about</h1>
+          <h1>about</h1>        
         </div>
       </section>
     </div>
 
-
     <script>
+      // GNB Checked
       $('.gnb a').click(function(){
         $(this).addClass('active')
         $(this).siblings().removeClass('active')
       })
+      // Trigger
+      $('.trigger').click(function(){
+        $('.gnb , body, .overlay').toggleClass('active')
+        $(this).toggleClass('active')
+      })
+      // Overlay
+      $('.overlay, .gnb a').click(function(){
+        $('.gnb, .trigger, body, .overlay').removeClass('active')
+      })
     </script>
-
-.
-
+    
   </body>
 </html>

@@ -1,17 +1,20 @@
-/* Google Web Font */
+/* Google Web Font  */
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
-html {
-  scroll-behavior: smooth;
-}
+/* XEICON CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
 
 * {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  font-family:  'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif; 
   background-color: #fff;
   font-size: 18px;
 }
@@ -31,7 +34,7 @@ header {
 }
 
 .header-inner {
-  width: 100%;
+  /* width: 100%; */
   width: 1280px;
   margin: auto;
 }
@@ -56,7 +59,6 @@ header {
   color: crimson;
 }
 
-/* Section Layout  */
 section {
   height: 100vh;
   line-height: 100vh;
@@ -83,21 +85,21 @@ section h1 {
   text-transform: uppercase;
 }
 
+/* Trigger  */
+.trigger {
+  display: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Overlay */
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
 
 
 

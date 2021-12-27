@@ -85,7 +85,7 @@ section h1 {
   text-transform: uppercase;
 }
 
-/* Trigge
+/* Trigger  */
 .trigger {
   display: none;
 }
@@ -100,8 +100,5 @@ section h1 {
   visibility: hidden;
   transition: 0.5s;
 }
-
-
-
 
 

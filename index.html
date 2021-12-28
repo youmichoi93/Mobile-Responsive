@@ -9,68 +9,68 @@
     <link href="style.css" rel="stylesheet">
     <link href="responsive.css" rel="stylesheet">
   </head>
-  <body>
+ <body>
 
-    <div class="container">
-      <div class="overlay"></div>
-      <header>
-        <div class="header-inner">
-          <span class="logo">Blake's Portfolio</span>
-          <div class="gnb">
-            <a class="active" href="#feature1">about</a>
-            <a href="#feature2">about</a>
-            <a href="#feature3">about</a>
-            <a href="#feature4">about</a>
-            <a href="#feature5">about</a>
-          </div>
+  <div class="container">
+    <div class="overlay"></div>
+    <header>
+      <div class="header-inner">
+        <span class="logo">codingworks</span>
+        <div class="gnb">
+          <a class="active" href="#feature1">about</a>
+          <a href="#feature2">skills</a>
+          <a href="#feature3">work experience</a>
+          <a href="#feature4">portfolio</a>
+          <a href="#feature5">epilogue</a>
         </div>
-        <div class="trigger">
-          <i class="xi-bars"></i>
-        </div>
-      </header>
-      <section id="feature1">
-        <div class="inner">
-          <h1>about</h1>        
-        </div>
-      </section>
-       <section id="feature2">
-        <div class="inner">
-          <h1>about</h1>        
-        </div>
-      </section>
-       <section id="feature3">
-        <div class="inner">
-          <h1>about</h1>        
-        </div>
-      </section>
-       <section id="feature4">
-        <div class="inner">
-          <h1>about</h1>        
-        </div>
-      </section>
-       <section id="feature5">
-        <div class="inner">
-          <h1>about</h1>        
-        </div>
-      </section>
-    </div>
+      </div>
+      <div class="trigger">
+        <i class="xi-bars"></i>
+      </div>
+    </header> 
+    <section id="feature1">
+      <div class="inner">
+        <h1>about</h1>
+      </div>
+    </section>
+    <section id="feature2">
+      <div class="inner">
+        <h1>skills</h1>
+      </div>
+    </section>
+    <section id="feature3">
+      <div class="inner">
+        <h1>work experience</h1>
+      </div>
+    </section>
+    <section id="feature4">
+      <div class="inner">
+        <h1>portfolio</h1>
+      </div>
+    </section>
+    <section id="feature5">
+      <div class="inner">
+        <h1>epilogue</h1>
+      </div>
+    </section>
+  </div>
 
-    <script>
-      // GNB Checked
-      $('.gnb a').click(function(){
-        $(this).addClass('active')
-        $(this).siblings().removeClass('active')
-      })
-      // Trigger
-      $('.trigger').click(function(){
-        $('.gnb , body, .overlay').toggleClass('active')
-        $(this).toggleClass('active')
-      })
-      // Overlay
-      $('.overlay, .gnb a').click(function(){
-        $('.gnb, .trigger, body, .overlay').removeClass('active')
-      })
-    </script>
-    
-  </body>
+  <script>
+    // GNB Checked
+    $('.gnb a').click(function(){
+      $(this).addClass('active')
+      $(this).siblings().removeClass('active')
+    })
+    // Trigger
+    $('.trigger').click(function(){
+      $('.gnb, body, .overlay').toggleClass('active')
+      $(this).toggleClass('active')
+    })
+    // Overlay
+    $('.overlay, .gnb a').click(function(){
+      $('.gnb, .trigger, body, .overlay').removeClass('active')
+    })
+  </script>
+  
+</body>
 </html>
